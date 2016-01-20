@@ -19,17 +19,17 @@ class Trerray
 
   # returns the index of the left child of the item at index i
   def left(i)
-    # Fill this in
+    2 * i + 1
   end
 
-  # returns the index of the left child of the item at index i
+  # returns the index of the right child of the item at index i
   def right(i)
-    # Fill this in
+    2 * i + 2
   end
 
   # returns the index of the parent
   def parent(i)
-    # Fill this in
+    (i - 1) / 2
   end
 
   def get_children(i)
@@ -51,3 +51,9 @@ end
 #         that no parent has a child that is greater than itself?
 #         (assume all elements are comparable using < and >)
 #         (this is called building a heap)
+
+# breadth-first tree construction
+#           0
+#     1           2
+#  3    4     5      6
+# 7 8  9 10 11 12  13 14
